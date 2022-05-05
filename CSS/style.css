@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -50,7 +49,8 @@ main {
 
 .text h3 a {
     text-decoration: none;
-    color: rgba(240, 46, 169, 0.788);
+    color: hsla(322, 87%, 56%, 0.788);
+    color: #f02da9;
 }
 
 .text p {
@@ -66,6 +66,7 @@ main img {
     height: 100%;
     width: auto;
     border-radius: 0% 1.5% 1.5% 0%;
+    /* filter: brightness(1.3) invert(0.17) saturate(2.6) sepia(0.25) url('#purple-sepia'); */
 }
 
 .stats {
@@ -110,14 +111,29 @@ ul{
 
     main {
         min-width: 250px;
-       /*  position: relative; */
-       /* border-radius: 30px; shadow */
        /* box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, 
+       rgba(240, 46, 170, 0.4) 5px 5px,
        rgba(240, 46, 170, 0.3) -10px 10px, 
+       rgba(240, 46, 170, 0.3) 10px 10px, 
        rgba(240, 46, 170, 0.2) -15px 15px, 
+       rgba(240, 46, 170, 0.2) 15px 15px, 
        rgba(240, 46, 170, 0.1) -20px 20px, 
-       rgba(240, 46, 170, 0.05) -25px 25px; */
+       rgba(240, 46, 170, 0.1) 20px 20px, 
+       rgba(240, 46, 170, 0.05) -25px 25px,
+       rgba(240, 46, 170, 0.05) 25px 25px; */
+
+       box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, 
+       rgba(240, 46, 170, 0.3) 0px 10px, 
+       rgba(240, 46, 170, 0.2) 0px 15px, 
+       rgba(240, 46, 170, 0.1) 0px 20px, 
+       rgba(240, 46, 170, 0.05) 0px 25px;
+
        border-radius: 1.5%;
+       box-sizing: border-box;
+    }
+
+    .main-block {
+        margin-top: 2em;
     }
     
     main img {
@@ -131,6 +147,7 @@ ul{
         min-width: none;
         order: 1;
         border-radius: 3% 3% 0% 0%;
+        
     }
 
     .right-side {
