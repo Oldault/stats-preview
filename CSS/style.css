@@ -3,16 +3,19 @@
     margin: 0;
 }
 
+html {
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
 body {
     background-color: hsl(233, 47%, 7%);
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
+    position: absolute;
 }
 
 main {
-/*     display: flex;
- */    position: fixed;
+/*     display: flex;*/
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -61,15 +64,13 @@ main {
     margin-bottom: 2em;
 }
 
-main img {
+.img img {
     display: flex;
     max-width: auto;
     overflow: hidden;
     height: 100%;
     width: auto;
     border-radius: 0% 1.5% 1.5% 0%;
-    /* filter: brightness(1.3) invert(0.17) saturate(2.6) sepia(0.25) url('#purple-sepia'); */
-    filter: hue-rotate(180deg);
 }
 
 .stats {
@@ -112,19 +113,12 @@ ul{
         padding: auto;
     }
 
+    body {
+        position:relative;
+    }
+
     main {
         min-width: 250px;
-       /* box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, 
-       rgba(240, 46, 170, 0.4) 5px 5px,
-       rgba(240, 46, 170, 0.3) -10px 10px, 
-       rgba(240, 46, 170, 0.3) 10px 10px, 
-       rgba(240, 46, 170, 0.2) -15px 15px, 
-       rgba(240, 46, 170, 0.2) 15px 15px, 
-       rgba(240, 46, 170, 0.1) -20px 20px, 
-       rgba(240, 46, 170, 0.1) 20px 20px, 
-       rgba(240, 46, 170, 0.05) -25px 25px,
-       rgba(240, 46, 170, 0.05) 25px 25px; */
-
        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, 
        rgba(240, 46, 170, 0.3) 0px 10px, 
        rgba(240, 46, 170, 0.2) 0px 15px, 
@@ -139,7 +133,8 @@ ul{
         margin-top: 2em;
     }
     
-    main img {
+    .img img {
+        /* content: url(https://i0.wp.com/vgkami.com/wp-content/uploads/2022/01/featured-image-minecraft-how-to-breed-pigs.jpg?w=1200&ssl=1); */
         display: flex;
         flex-wrap: wrap;
         max-width: 100%;
